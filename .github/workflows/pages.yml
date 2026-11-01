@@ -29,7 +29,6 @@ jobs:
               if (![400, 404, 409].includes(error.status)) throw error;
               core.info('Previous deployment is already terminal or absent.');
             }
-            await github.request('PUT /repos/{owner}/{repo}/pages', {...repo, build_type: 'workflow'});
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
