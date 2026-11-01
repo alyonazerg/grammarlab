@@ -1,19 +1,15 @@
 # Grammar Studio
 
-Four 90-minute university classes on English pronouns and numerals. All student-facing content is English.
+Four 90-minute English grammar classes: pronouns and numerals. Includes 32 interactive practice questions, a 20-term glossary, production tasks, homework and a 60-mark assessment.
 
-Open `index.html` or download `offline.html` for a self-contained edition with no network dependencies. Includes 32 practice questions, 20 glossary terms, production tasks, homework and a 60-mark final assessment. Progress and drafts are device-local.
+## Use
+Open index.html, or download offline.html for a standalone edition requiring no internet or installation. Use Board mode and Print for classroom presentation. Progress and assessment drafts are saved only in the current browser; export responses to keep a copy.
 
-## GitHub Pages
+## Publish on GitHub Pages
+Settings → Pages → Deploy from a branch → main → /(root) → Save.
+Expected URL after publication: https://alyonazerg.github.io/grammarlab/
 
-In Settings → Pages, choose **Deploy from a branch**, then **main / (root)** and Save. The expected address after publication is https://alyonazerg.github.io/grammarlab/ .
+## Teaching sources
+Kaushanskaya is the exam terminology reference. Supplementary references: How English Works, Practical English Usage, Downing and A Student’s Introduction to English Grammar. TKT informs lesson sequencing and assessment. The Good Grammar Book is excluded. Practice examples are original; universal/detaching are explicitly mapped to Kaushanskaya’s defining group.
 
-## Sources and scope
-
-Kaushanskaya provides the exam terminology. Supplementary references: How English Works, Practical English Usage, Downing and A Student’s Introduction to English Grammar. TKT informs sequencing and assessment. The Good Grammar Book is excluded. Practice examples are original. Definitions distinguish textbook terms from additional teaching labels.
-
-Designed for B1+/B2 consolidation. Written production and the final assessment require teacher feedback.
-
-## Verification
-
-JavaScript syntax, content schema, answer indices and assessment mark totals checked. Browser visual QA was blocked by execution-environment restrictions.
+Designed for B1+/B2 consolidation with teacher feedback. JavaScript syntax, content schema, answer indices and 60-mark total checked. Browser visual QA was blocked by environment restrictions.
