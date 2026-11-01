@@ -6,10 +6,13 @@
   <meta name="theme-color" content="#183d35">
   <meta name="description" content="A four-session university grammar course. Discover, practise and explain English pronouns and numerals.">
   <title>Grammar Studio — Pronouns & Numerals</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="course-content.js" defer></script>
-  <script src="resources.js" defer></script>
-  <script src="app.js" defer></script>
+  <style>:root{--paper:#f6f3eb;--ink:#183d35;--muted:#68766e;--lime:#d9eb92;--line:#dcded3;--white:#fffef9;--soft:#e9eee3;--orange:#d5754b;--radius:18px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none;font-size:16px;line-height:1.65}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{cursor:pointer;color:inherit}button:disabled{cursor:default}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #b5683d;outline-offset:4px}button{min-height:44px}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.16;letter-spacing:-.035em}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(2.8rem,4.6vw,5rem);margin-bottom:24px}h2{font-size:clamp(1.9rem,3vw,2.7rem);margin-bottom:20px}h3{font-size:1.15rem;letter-spacing:-.02em;margin-bottom:12px}p{margin-bottom:1.1rem}ul,ol{padding-left:24px}li{margin-bottom:.5rem}.muted{color:var(--muted)}.eyebrow{font-size:.65rem;font-weight:750;letter-spacing:.16em;line-height:1.5;text-transform:uppercase}.skip-link{position:fixed;top:-100px;left:12px;z-index:99;background:var(--lime);padding:12px 20px}.skip-link:focus{top:12px}.site-header{display:flex;align-items:center;justify-content:space-between;padding:23px 38px;border-bottom:1px solid var(--line);gap:28px;background:var(--paper)}.brand{display:flex;align-items:center;gap:12px;border:0;padding:0;background:none;text-align:left;font-size:1.05rem;font-weight:650;letter-spacing:-.04em;line-height:1.05}.brand-second{display:block;font-weight:400}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border-radius:50%;background:var(--ink);color:var(--paper);font:italic 34px Georgia,serif;letter-spacing:-.1em;padding-right:4px}.main-nav{display:flex;gap:28px;align-items:center}.main-nav button{border:0;background:none;font-size:.82rem;padding:5px 0}.main-nav button:hover,.main-nav button.active{box-shadow:0 1px var(--ink)}.main-nav span{font-size:.7rem;margin-left:3px}.header-tools{display:flex;gap:10px}.tool-button{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:none;font-size:.75rem;font-weight:600}.tool-button[aria-pressed=true]{background:var(--lime);border-color:var(--lime)}.tool-button span{margin-right:7px}.workspace{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:calc(100vh - 170px)}.sidebar{border-right:1px solid var(--line);padding:35px 24px;display:flex;flex-direction:column;gap:25px}.sidebar-top .eyebrow{color:var(--muted);font-size:.58rem}.course-label{font:27px/1.15 Georgia,serif;margin:17px 0 12px;letter-spacing:-.035em}.sidebar-top p{font-size:.72rem}.sidebar nav{display:grid;gap:8px}.sidebar nav button{display:flex;align-items:center;gap:12px;text-align:left;width:100%;background:none;border:1px solid transparent;border-radius:10px;padding:12px 10px;font-size:.77rem;line-height:1.4}.sidebar nav button:hover{background:var(--soft)}.sidebar nav button.active{background:var(--ink);color:var(--paper)}.sidebar nav button>span:first-child{font-size:.67rem;opacity:.65}.sidebar nav button small{display:block;font-size:.62rem;opacity:.7;margin-top:3px}.sidebar-bottom{margin-top:auto;padding-top:45px}.progress-heading{display:flex;justify-content:space-between;gap:8px;font-size:.65rem}.progress-track{height:4px;background:var(--line);border-radius:8px;margin:12px 0;overflow:hidden}.progress-fill{height:100%;background:var(--ink);transition:width .2s}.local-note{font-size:.61rem;color:var(--muted);line-height:1.5}.offline-link{display:flex;align-items:center;gap:9px;text-decoration:none;font-size:.72rem;min-height:44px;border-top:1px solid var(--line);margin-top:22px;padding-top:14px}.offline-link span{font-size:1.3rem}#app{padding:42px 48px 65px;min-width:0;max-width:1600px;width:100%;margin:auto}#app:focus{outline:none}.hero{position:relative;padding:14px 0 38px}.hero .eyebrow{display:flex;align-items:center;gap:9px;margin-bottom:24px}.hero .eyebrow:before{content:"";width:7px;height:7px;background:var(--orange);border-radius:50%}.hero-grid{display:grid;grid-template-columns:1.25fr .8fr;gap:30px;align-items:center}.hero h1{max-width:650px}.hero p{max-width:510px;color:var(--muted);font-size:.94rem}.hero-art{position:relative;min-height:280px;background:var(--lime);border-radius:100% 100% 12px 12px;overflow:hidden;display:grid;place-items:center;color:var(--ink);font:italic 110px Georgia,serif;letter-spacing:-.08em}.hero-art:before{content:"Aa";position:absolute;left:20%;top:20%;font:italic 100px Georgia,serif;transform:rotate(-12deg)}.hero-art:after{content:"⅔";position:absolute;bottom:0;right:12%;font:120px Georgia,serif;transform:rotate(10deg);color:#476643}.hero-art>*{position:relative;z-index:1}.hero-art span{font-size:4rem}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;padding:11px 20px;border-radius:8px;background:var(--ink);color:var(--white);border:1px solid var(--ink);font-size:.78rem;font-weight:600;text-decoration:none}.button:hover{background:#28574b}.button-secondary{background:transparent;color:var(--ink);border-color:var(--line)}.button-secondary:hover{background:var(--soft)}.tag{display:inline-flex;align-items:center;gap:5px;background:var(--soft);border-radius:5px;padding:4px 8px;font-size:.62rem;font-weight:600;line-height:1.5}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;border-top:1px solid var(--line);padding-top:26px;margin-top:16px;margin-bottom:24px}.section-heading h2{margin:0;font-size:1.8rem}.section-heading p{font-size:.75rem;margin:0;color:var(--muted)}.session-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.session-card{position:relative;text-align:left;display:flex;flex-direction:column;align-items:flex-start;padding:25px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);color:var(--ink);text-decoration:none;min-width:0;transition:transform .15s,border-color .15s}.session-card:hover{transform:translateY(-3px);border-color:#9ba98e}.session-card h3{font:26px/1.15 Georgia,serif;letter-spacing:-.03em;margin:15px 0 12px;max-width:320px}.session-card p{color:var(--muted);font-size:.78rem;line-height:1.6}.session-card .tag{margin-top:auto}.card-number{font-size:.63rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.card-arrow{position:absolute;right:24px;top:22px;font-size:1.4rem}.lesson-header{padding:5px 0 25px}.lesson-header .eyebrow{margin-bottom:15px;display:block}.lesson-header h1{font-size:clamp(2.4rem,4vw,4rem);max-width:850px;margin-bottom:15px}.lesson-header p{max-width:760px;color:var(--muted)}.stage-nav{display:flex;gap:7px;overflow:auto;border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:30px}.stage-button{white-space:nowrap;border:0;background:transparent;border-radius:7px;padding:9px 14px;font-size:.75rem;font-weight:600}.stage-button.active,.stage-button[aria-selected=true]{background:var(--ink);color:var(--paper)}.stage-button:hover:not(.active){background:var(--soft)}.stage-content{max-width:1000px}.stage-content>h2{font-size:2rem}.theory-card,.question-card,.assessment-section,.glossary-card{padding:25px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:16px}.theory-card h3{font-size:1.05rem}.theory-card p,.question-card p,.assessment-section p{font-size:.92rem}.example{border-left:3px solid #9ab45f;background:#f0f3e8;padding:12px 18px;margin:12px 0;font-family:Georgia,serif;font-size:1.1rem;line-height:1.65}.discovery-list{list-style:none;padding:0;counter-reset:examples}.discovery-list li{counter-increment:examples;border-bottom:1px solid var(--line);padding:13px 0;display:flex;align-items:baseline;gap:20px;font:1.3rem/1.5 Georgia,serif}.discovery-list li:before{content:counter(examples,decimal-leading-zero);font:600 .65rem system-ui;color:var(--muted)}.question-card>h3{line-height:1.5}.option{display:block;width:100%;min-height:48px;border:1px solid var(--line);border-radius:8px;background:transparent;text-align:left;padding:10px 15px;margin:8px 0;font-size:.88rem}.option:hover{background:var(--soft);border-color:#a1ae9d}.option.correct,.correct{border-color:#66883d;background:#edf4db}.option.incorrect,.incorrect{border-color:#bc806a;background:#fbede6}.feedback{border-radius:8px;background:var(--soft);padding:14px 18px;margin-top:15px;font-size:.85rem}.feedback:empty{display:none}.checklist{list-style:none;padding:0}.checklist li{padding:10px 0;border-bottom:1px solid var(--line)}.checklist label{display:flex;align-items:start;gap:12px;cursor:pointer}.checklist input{accent-color:var(--ink);width:19px;height:19px;flex-shrink:0;margin-top:4px}.toolbar{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:25px;align-items:center}.search-input,input[type=text],textarea,select{border:1px solid var(--line);background:var(--white);border-radius:8px;padding:12px 15px;color:var(--ink);min-height:46px;max-width:100%}.search-input{width:100%}textarea{width:100%;resize:vertical;min-height:120px}.glossary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.glossary-card{margin:0}.glossary-card h3{font:1.45rem Georgia,serif}.glossary-card p{font-size:.85rem}.glossary-card .example{font-size:.95rem}.assessment-section h3{font:1.4rem Georgia,serif}.assessment-section textarea{margin-top:10px}.footer{display:flex;justify-content:space-between;gap:18px;padding:23px 38px;border-top:1px solid var(--line);font-size:.61rem;color:var(--muted)}.footer>span:first-child{font-weight:750;letter-spacing:.12em;color:var(--ink)}details{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:15px 0;background:var(--white)}summary{cursor:pointer;min-height:30px;font-size:.86rem;font-weight:600}details[open] summary{margin-bottom:15px}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:.85rem}th,td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:.72rem;background:var(--soft)}.board-mode{font-size:21px}.board-mode .sidebar{display:none}.board-mode .workspace{grid-template-columns:1fr}.board-mode #app{max-width:1300px;padding:40px 60px}.board-mode .stage-content{max-width:none}.board-mode .theory-card p,.board-mode .question-card p,.board-mode .option{font-size:1.05rem}.board-mode .site-header{padding:15px 30px}.board-mode .footer{display:none}.board-mode .hero-art{min-height:360px}@media(min-width:1500px){#app{padding-left:65px;padding-right:65px}.hero-art{min-height:350px}}@media(max-width:1050px){.site-header{padding:20px 24px;gap:18px}.main-nav{gap:18px}.workspace{grid-template-columns:205px minmax(0,1fr)}.sidebar{padding:28px 18px}#app{padding:32px 28px 50px}.hero-grid{grid-template-columns:1fr .65fr;gap:18px}.hero-art{min-height:220px}.hero-art:before{font-size:80px;left:10%}.hero-art:after{font-size:95px}.print-button{display:none}.session-card{padding:20px}}@media(max-width:760px){.site-header{padding:15px 20px;flex-wrap:wrap;gap:10px}.brand{margin-right:auto}.main-nav{order:3;width:100%;justify-content:flex-start;border-top:1px solid var(--line);padding-top:9px;gap:26px}.main-nav button{font-size:.8rem}.tool-button{padding:8px 11px}.workspace{display:block}.sidebar{border-right:0;border-bottom:1px solid var(--line);padding:17px 20px;gap:12px}.sidebar-top{display:none}.sidebar nav{display:flex;overflow:auto;gap:7px}.sidebar nav button{min-width:130px;max-width:175px;padding:10px;font-size:.7rem}.sidebar-bottom{padding:0;margin:0}.sidebar-bottom .progress-heading,.sidebar-bottom .progress-track,.sidebar-bottom .local-note{display:none}.offline-link{border:0;padding:0;margin:0;font-size:.68rem;min-height:28px;justify-content:flex-end}#app{padding:28px 20px 45px}.hero{padding-top:0}.hero-grid{grid-template-columns:1fr}.hero-art{display:none}.hero h1{font-size:3.4rem;max-width:550px}.hero p{font-size:.92rem}.hero .eyebrow{margin-bottom:20px}.session-grid{gap:12px}.session-card{padding:20px 17px}.session-card h3{font-size:1.45rem}.session-card p{font-size:.73rem}.section-heading{align-items:start}.section-heading p{max-width:150px;font-size:.68rem}.glossary-grid{grid-template-columns:1fr}.stage-nav{gap:3px}.stage-button{padding:8px 12px}.theory-card,.question-card,.assessment-section{padding:20px}.footer{padding:20px;flex-wrap:wrap}.footer>span:last-child{display:none}.board-mode #app{padding:25px}.board-mode .site-header{padding:15px 20px}.board-mode .main-nav{display:none}}@media(max-width:440px){.session-grid{grid-template-columns:1fr}.hero h1{font-size:2.85rem}.header-tools .tool-button{font-size:.65rem}.section-heading{display:block}.section-heading p{max-width:none;margin-top:10px}.session-card h3{max-width:280px}.lesson-header h1{font-size:2.5rem}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}@media print{body{background:white;color:#111;font-size:11pt}.site-header,.sidebar,.footer,.stage-nav,.toolbar,.hero-actions,.skip-link,button,.offline-link{display:none!important}.workspace{display:block}#app,.board-mode #app{padding:0;max-width:none}.hero-art{display:none}.hero-grid{display:block}.theory-card,.question-card,.glossary-card,.assessment-section{break-inside:avoid;background:white;border-color:#ccc;padding:14px}.stage-content{max-width:none}h1{font-size:28pt}h2{font-size:22pt}.glossary-grid{display:block}.glossary-card{margin-bottom:12px}a{text-decoration:none}.example{background:#f4f4f4}details>summary{list-style:none}details>*{display:block!important}textarea{border:1px solid #aaa;min-height:70px}}
+
+.hero-art:before,.hero-art:after{content:none}.hero-art .art-word{position:absolute;top:12%;left:13%;font:italic 112px Georgia,serif;transform:rotate(-12deg)}.hero-art .art-number{position:absolute;right:12%;bottom:12%;font:132px Georgia,serif;transform:rotate(9deg)}.hero-art .art-caption{position:absolute;bottom:7%;left:10%;font:600 9px system-ui,sans-serif;letter-spacing:.12em}.session-link.active{background:var(--lime)}#courseProgress{font-size:.72rem}#courseProgress .progress-track{margin-top:10px}.option.correct{border-color:#467349;background:#e9f2d9}.option.incorrect{border-color:#a4583a;background:#fbede4}.button:disabled{opacity:.5}.main-nav [aria-current=page]{box-shadow:0 1px var(--ink)}
+</style>
+  
+  
+  
 </head>
 <body>
   <a class="skip-link" href="#app">Skip to content</a>
@@ -22,10 +25,891 @@
     <aside class="sidebar" aria-label="Course navigation">
       <div class="sidebar-top"><span class="eyebrow">YOUR LEARNING PATH</span><div class="course-label">Pronouns<br>& Numerals</div><p class="muted">Four sessions. Clearer English.</p></div>
       <nav id="sessionNav" aria-label="Sessions"></nav>
-      <div class="sidebar-bottom"><div class="progress-heading">Course progress</div><div id="courseProgress">0 / 4 sessions reviewed</div><p class="local-note">Your progress stays on this device.</p><a class="offline-link" href="offline.html" download><span aria-hidden="true">↓</span> Download offline</a></div>
+      <div class="sidebar-bottom"><div class="progress-heading">Course progress</div><div id="courseProgress">0 / 4 sessions reviewed</div><p class="local-note">Your progress stays on this device.</p><a class="offline-link" href="#" id="downloadOffline"><span aria-hidden="true">↓</span> Download offline</a></div>
     </aside>
     <main id="app" tabindex="-1"><noscript><div class="theory-card"><h1>Welcome to Grammar Studio</h1><p>Enable JavaScript to explore the course, practise and save progress on your device.</p></div></noscript></main>
   </div>
   <footer class="footer"><span>GRAMMAR STUDIO</span><span>Notice the pattern. Explain the choice.</span><span>Made for thoughtful practice.</span></footer>
-</body>
+<script>window.COURSE = [
+  {
+    "id": 1,
+    "title": "Reference & personal involvement",
+    "subtitle": "People, ownership, emphasis and mutual action",
+    "outcomes": [
+      "Identify pronoun forms, referents and sentence functions.",
+      "Distinguish reflexive, emphatic and reciprocal meanings.",
+      "Use personal, possessive and demonstrative forms to make reference clear."
+    ],
+    "discovery": {
+      "examples": [
+        "Maya introduced herself.",
+        "Maya herself introduced the speaker.",
+        "Maya prepared the slides by herself.",
+        "Maya and Alex introduced each other."
+      ],
+      "questions": [
+        "Who performs the action? Who is affected?",
+        "Which sentence emphasises personal involvement?",
+        "Which sentence describes mutual action?",
+        "Can “by herself” mean alone or without help?"
+      ],
+      "insight": "The same -self form can refer back to a participant or add emphasis. Reciprocal forms express mutual action; by + reflexive can mean alone or without help."
+    },
+    "theory": [
+      {
+        "title": "The pronoun: class, reference and function",
+        "body": "Kaushanskaya defines the pronoun as a part of speech which points out objects and their qualities without naming them. An antecedent helps identify a referent. Class and sentence function are different: a personal pronoun can be a subject or an object. Traditional functions include subject, object, predicative and attribute.",
+        "examples": [
+          "She checked the report. → personal pronoun; subject",
+          "The tutor thanked her. → personal pronoun; object",
+          "This version is mine. → absolute possessive; predicative",
+          "Alex told Sam that he was late. → clarify who “he” means"
+        ]
+      },
+      {
+        "title": "Personal pronouns and dummy it",
+        "body": "Personal pronouns distinguish person, number, case and, in third-person singular forms, gender. Use nominative forms for subjects and objective forms for objects, including after prepositions. Singular they can refer to a person whose gender is unknown or to a person who uses they. Referential it refers to something; dummy it fills a grammatical position without an ordinary referent.",
+        "examples": [
+          "Alex and I presented. The tutor thanked Alex and me.",
+          "Between you and me, this needs revision.",
+          "Someone left their notes. They may return.",
+          "The projector is ready. It works. → referential",
+          "It is raining. It is important to check the figures. → dummy"
+        ]
+      },
+      {
+        "title": "Possessive forms",
+        "body": "Kaushanskaya distinguishes conjoint (dependent) forms before nouns and absolute (independent) forms used without a following noun. Modern descriptions commonly call my, your and similar dependent forms possessive determiners. Possessives express association as well as ownership. Its has no apostrophe; it’s means it is or it has.",
+        "examples": [
+          "my / mine; your / yours; her / hers; our / ours; their / theirs",
+          "His has the same dependent and independent form.",
+          "These are our notes. Those are yours.",
+          "A colleague of mine shared the file.",
+          "The app has changed its layout. It’s easier to read."
+        ]
+      },
+      {
+        "title": "Reflexive and emphatic uses",
+        "body": "Reflexive forms include myself, yourself, himself, herself, itself, ourselves, yourselves and themselves. In the central reflexive use, the subject and object refer to the same participant. Emphatic (intensive) use highlights personal involvement. By oneself can mean alone or without help. Do not use myself merely as a formal substitute for me. Everyday wash and dress normally do not need reflexives unless the context requires emphasis or contrast.",
+        "examples": [
+          "Nina introduced herself. → reflexive object",
+          "Nina herself approved the plan. → emphatic",
+          "Nina approved the plan herself. → emphatic",
+          "Nina worked by herself. → alone / without help",
+          "She washed and dressed. Please contact me."
+        ]
+      },
+      {
+        "title": "Reciprocal pronouns",
+        "body": "Each other and one another express mutual action or relation. A strict two-versus-more-than-two distinction is not required in contemporary usage; Kaushanskaya also notes that the traditional tendency is not always observed. Reciprocal forms can be possessive.",
+        "examples": [
+          "They assessed themselves. → each person assessed that same person",
+          "They assessed each other. → mutual assessment",
+          "They read each other’s feedback."
+        ]
+      },
+      {
+        "title": "Demonstrative pronouns",
+        "body": "This and these commonly indicate nearer reference; that and those commonly indicate more distant reference in space, time or discourse. They may identify a noun or stand independently. Kaushanskaya also includes such and (the) same among demonstratives.",
+        "examples": [
+          "This diagram is clearer than that one.",
+          "These are the results.",
+          "The server failed. That delayed the session.",
+          "Such questions require care. We chose the same."
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "question": "The tutor sent the feedback to Alex and ___.",
+        "options": [
+          "I",
+          "me",
+          "myself"
+        ],
+        "answer": 1,
+        "explanation": "The whole coordinated phrase is an object after “to”: to Alex and me."
+      },
+      {
+        "question": "Choose the absolute possessive: “This laptop is ___.”",
+        "options": [
+          "my",
+          "me",
+          "mine"
+        ],
+        "answer": 2,
+        "explanation": "Mine stands without a following noun. My is dependent: my laptop."
+      },
+      {
+        "question": "In “Lena herself approved the change”, herself is …",
+        "options": [
+          "reflexive object",
+          "emphatic",
+          "reciprocal"
+        ],
+        "answer": 1,
+        "explanation": "Herself highlights Lena’s personal involvement; approved still has the object “the change”."
+      },
+      {
+        "question": "Which sentence expresses mutual action?",
+        "options": [
+          "They recorded themselves.",
+          "They recorded each other.",
+          "They recorded the talk themselves."
+        ],
+        "answer": 1,
+        "explanation": "Each other means that the participants recorded one another."
+      },
+      {
+        "question": "Which sentence uses dummy it?",
+        "options": [
+          "The tablet is new. It is fast.",
+          "It is raining outside.",
+          "I charged it yesterday."
+        ],
+        "answer": 1,
+        "explanation": "Weather “it” does not refer back to an ordinary object."
+      },
+      {
+        "question": "Choose the neutral wording.",
+        "options": [
+          "Please email myself.",
+          "Please email me.",
+          "Please email mine."
+        ],
+        "answer": 1,
+        "explanation": "Me is the ordinary object form. Myself is not a general formal alternative."
+      },
+      {
+        "question": "Choose the correct pair: “The platform changed ___ layout. ___ now clearer.”",
+        "options": [
+          "it’s / Its",
+          "its / It’s",
+          "its / Its"
+        ],
+        "answer": 1,
+        "explanation": "Its is possessive. It’s here means it is."
+      },
+      {
+        "question": "“I solved it by myself” can mean …",
+        "options": [
+          "only that I was physically alone",
+          "only that I had no help",
+          "alone or without help, depending on context"
+        ],
+        "answer": 2,
+        "explanation": "Context determines which interpretation of by myself is relevant."
+      }
+    ],
+    "production": {
+      "title": "Project handover",
+      "instructions": "Explain who owns the materials, who completed each task, what people did independently and how they helped one another. Your partner reconstructs responsibilities. Then revise any unclear reference. Scenario: Maya owns the slides; Alex owns the survey notes; you own the budget. Maya designed the slides without help. Alex and you checked one another’s figures. Everyone reviewed their own section. Give a handover without simply reading these notes; your listener draws a responsibility map.",
+      "criteria": [
+        "Ownership and responsibility are clear.",
+        "Reflexive, emphatic and reciprocal meanings are distinguished.",
+        "You can explain two grammatical choices."
+      ]
+    },
+    "homework": [
+      "Core homework: 35–45 minutes including preparation for Session 2. Extensions are optional.",
+      "Write definitions and one example for glossary terms 1–6; check them against the glossary.",
+      "Revisit the eight practice questions. Explain two choices in writing, including a reflexive/emphatic contrast.",
+      "Write 80–100 words about a collaborative task. Label four pronouns with class and function.",
+      "Prepare for Session 2: read its discovery examples and propose meanings for some, every, neither and another."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Groups, choices & alternatives",
+    "subtitle": "Unspecified, universal, negative and different reference",
+    "outcomes": [
+      "Choose forms that express unspecified reference, absence, totality and alternatives.",
+      "Explain defining pronouns in Kaushanskaya’s classification.",
+      "Use agreement and singular they appropriately."
+    ],
+    "discovery": {
+      "examples": [
+        "Some students have registered.",
+        "Every student has received a confirmation.",
+        "Neither of the two rooms is available.",
+        "We need another room.",
+        "One room has a projector; the other has a board."
+      ],
+      "questions": [
+        "Which sentence refers to an unspecified group?",
+        "Which treats every member individually?",
+        "How many rooms are considered with neither?",
+        "Does another mean different, additional, or both in different contexts?"
+      ],
+      "insight": "The form depends on the intended set and meaning: unspecified membership, individual distribution, absence, or a different/additional option."
+    },
+    "theory": [
+      {
+        "title": "Indefinite reference: some and any",
+        "body": "Indefinite pronouns point out people or things without identifying a particular referent. Some is common in affirmative contexts, offers and requests. Any is common in questions and negatives, and can express free choice in affirmative contexts. These are meaning-sensitive patterns, not an absolute positive/negative rule.",
+        "examples": [
+          "Some students stayed. Did anyone stay?",
+          "Would you like some water? Could I have some help?",
+          "Choose any available seat. → it does not matter which",
+          "Someone has left their notebook."
+        ]
+      },
+      {
+        "title": "Negative reference",
+        "body": "No precedes a noun; none can stand independently or be followed by of. Nobody and no one refer to people; nothing refers to things. Neither excludes both of two alternatives. Standard neutral English avoids combining these negative pronouns with another negative verb to express one negation. Nobody, no one and nothing take singular verbs; subsequent they is normal.",
+        "examples": [
+          "There are no spare rooms. None are available.",
+          "Nobody has replied. They may be busy.",
+          "I didn’t receive any replies. / I received no replies.",
+          "Neither option is suitable.",
+          "None of the students is/are absent. → both agreement patterns occur"
+        ]
+      },
+      {
+        "title": "Whole groups and individual distribution",
+        "body": "Kaushanskaya’s defining group includes all, both, each, every and every- compounds, either, other and another. All considers a group as a whole; both concerns two. Each focuses on members individually and can apply to two or more; every normally distributes across a set of three or more. Every is used before a singular noun; each can stand independently or take of.",
+        "examples": [
+          "All students received the message.",
+          "Both rooms have screens.",
+          "Each of the two speakers has ten minutes.",
+          "Every student has a copy. Each has a copy.",
+          "Everyone = everybody; every one of the files = each individual file."
+        ]
+      },
+      {
+        "title": "Either, neither and of-patterns",
+        "body": "Either can mean one or the other of two; in patterns such as “on either side” it can mean each of the two. Neither means not one and not the other. Use of before a pronoun or a noun phrase with a determiner. In formal assessed writing use singular agreement after either/neither of; plural agreement also occurs in usage.",
+        "examples": [
+          "Either room is suitable. Neither room is suitable.",
+          "There are windows on either side.",
+          "Each of them; both of us; none of the answers",
+          "Every student, not “every of the students”"
+        ]
+      },
+      {
+        "title": "Other and another; one and ones",
+        "body": "Another means a different one or an additional one. Other can precede a plural noun; others stands without one. The other and the others identify the remaining member(s) of a known set. One and ones can substitute for count nouns; generic one refers to people generally and has forms one’s and oneself.",
+        "examples": [
+          "We need another example. Other examples are online.",
+          "One room is booked; the other is free.",
+          "Some agreed; the others asked questions.",
+          "I prefer the shorter one and the blue ones.",
+          "One should check one’s sources."
+        ]
+      },
+      {
+        "title": "Classification bridge",
+        "body": "The uploaded Kaushanskaya edition has a defining-pronoun group. Universal and detaching are additional labels in the required glossary, not separate groups in that edition. Universal describes whole-group/distributive meanings such as all, both, each and every. Detaching describes difference/addition, especially other and another. Keep the labels connected to the textbook’s defining group rather than mixing classifications silently.",
+        "examples": [
+          "all / each / every → defining in Kaushanskaya",
+          "other / another → defining in Kaushanskaya",
+          "A term names a classification choice; context determines meaning and function."
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "question": "Choose a natural offer: “Would you like ___ tea?”",
+        "options": [
+          "some",
+          "none",
+          "every"
+        ],
+        "answer": 0,
+        "explanation": "Some is common in offers; questions do not automatically require any."
+      },
+      {
+        "question": "“Choose any available seat” expresses …",
+        "options": [
+          "a negative meaning",
+          "free choice",
+          "all seats together"
+        ],
+        "answer": 1,
+        "explanation": "Any means it does not matter which available seat you choose."
+      },
+      {
+        "question": "We have two proposed dates. ___ date works for me: I am away on both.",
+        "options": [
+          "None",
+          "Neither",
+          "Every"
+        ],
+        "answer": 1,
+        "explanation": "Neither excludes both members of a two-item set."
+      },
+      {
+        "question": "Choose the correct construction.",
+        "options": [
+          "Every of the students has a copy.",
+          "Each of the students has a copy.",
+          "Each of students has a copy."
+        ],
+        "answer": 1,
+        "explanation": "Each can take of + a determined noun phrase. Every cannot take of directly."
+      },
+      {
+        "question": "One of the two files is ready; ___ still needs editing.",
+        "options": [
+          "another",
+          "others",
+          "the other"
+        ],
+        "answer": 2,
+        "explanation": "The other identifies the remaining member of a known pair."
+      },
+      {
+        "question": "Choose the correct sentence.",
+        "options": [
+          "Nobody have submitted their draft.",
+          "Nobody has submitted their draft.",
+          "Nobody hasn’t submitted their draft."
+        ],
+        "answer": 1,
+        "explanation": "Nobody takes a singular verb; singular their is acceptable. The intended meaning uses one negative."
+      },
+      {
+        "question": "In the uploaded Kaushanskaya edition, other and another belong to …",
+        "options": [
+          "defining pronouns",
+          "personal pronouns",
+          "relative pronouns"
+        ],
+        "answer": 0,
+        "explanation": "Defining is the textbook category. Detaching is an additional glossary label mapped to it."
+      },
+      {
+        "question": "Choose the noun substitute: “The green folders are larger than the blue ___.”",
+        "options": [
+          "one",
+          "ones",
+          "another"
+        ],
+        "answer": 1,
+        "explanation": "Ones substitutes for the plural count noun folders."
+      }
+    ],
+    "production": {
+      "title": "Plan an inclusive workshop",
+      "instructions": "Choose rooms, resources and activities for a group with different requirements. Account for everyone, compare two alternatives and explain what to do if neither works. Your partner checks whether any participant has been overlooked. Scenario: 24 students attend. Room A seats 30 and has a projector but no interactive board. Room B seats 20 and has an interactive board. Six students need paper copies. Two proposed dates are Monday and Thursday; four students cannot attend Monday, but everyone can attend Thursday. Choose a date and room, arrange resources and explain one compromise.",
+      "criteria": [
+        "The intended set is clear.",
+        "Choices express totality, distribution, absence and alternatives accurately.",
+        "Explain one contrast involving each/every or other/another."
+      ]
+    },
+    "homework": [
+      "Core homework: 35–45 minutes including preparation for Session 3.",
+      "Prepare glossary entries 7–10; include the classification note.",
+      "Revisit the eight practice questions and explain two choices.",
+      "Write four paired contrasts: some/any; each/every; neither/none; another/the other. Supply enough context to make the intended meaning clear.",
+      "Write a 70–90-word workshop update using unspecified, negative and whole-group reference.",
+      "Prepare for Session 3: compare the three who sentences in Discover and locate their subjects and verbs."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Questions & clause connections",
+    "subtitle": "One form, different grammatical jobs",
+    "outcomes": [
+      "Distinguish interrogative, relative and conjunctive uses.",
+      "Identify clause function and the pronoun’s function within the clause.",
+      "Use embedded questions and relative clauses accurately."
+    ],
+    "discovery": {
+      "examples": [
+        "Who selected the topic?",
+        "I wonder who selected the topic.",
+        "The student who selected the topic will speak first.",
+        "I think that the answer is correct.",
+        "The answer that you selected is correct."
+      ],
+      "questions": [
+        "Which sentence is a direct question?",
+        "Which who-clause identifies a student?",
+        "Does each that perform a function inside its clause?",
+        "Where is there an antecedent?"
+      ],
+      "insight": "Classify a form in its sentence, not from spelling alone. A relative pronoun has a function inside its clause; conjunction that introduces a clause without filling such a function."
+    },
+    "theory": [
+      {
+        "title": "Interrogative pronouns",
+        "body": "Who, whose, what and which form special questions; whom is the objective form of who, especially in formal contexts. Who asks about people. Which usually selects from a contextually restricted set; what allows a more open choice. A subject question does not use do-support simply to form the question.",
+        "examples": [
+          "Who called? → subject question",
+          "Who did you call? → object question",
+          "Which of these topics do you prefer?",
+          "What interests you?",
+          "To whom should I send it? / Who should I send it to?"
+        ]
+      },
+      {
+        "title": "Relative clauses and antecedents",
+        "body": "A relative pronoun connects a relative clause to an antecedent and performs a function within the relative clause. Who commonly refers to people, which to things; whose expresses a possessive relationship. That is used in defining relatives. Non-defining relatives add supplementary information and are set off by commas; they do not use that.",
+        "examples": [
+          "The researcher who called is here. → who: subject of called",
+          "The article which we discussed is online. → which: object of discussed",
+          "The student whose laptop failed used mine.",
+          "Our tutor, who is presenting today, has arrived."
+        ]
+      },
+      {
+        "title": "Omission, prepositions and wider reference",
+        "body": "An object relative pronoun may be omitted in a defining clause, but a subject relative normally cannot. A fronted preposition takes whom or which, not that; preposition stranding is common. Which can refer to a whole preceding clause. Kaushanskaya also treats relative as in patterns such as such … as; recognise these without forcing them into every relative pattern.",
+        "examples": [
+          "The article (that) we read was useful.",
+          "The person who called is here. → do not omit who",
+          "The person to whom I spoke / the person I spoke to",
+          "The session was cancelled, which surprised us.",
+          "Choose such examples as illustrate the rule."
+        ]
+      },
+      {
+        "title": "Conjunctive pronouns and embedded questions",
+        "body": "In Kaushanskaya’s analysis, who, what, whose and which can introduce subject, object or predicative clauses and perform a function inside them. Embedded questions normally have statement word order. Modern descriptions distinguish interrogative content clauses from fused relatives, so different what-clauses need not receive identical analyses.",
+        "examples": [
+          "I know who selected the topic. → object clause; who is subject within it",
+          "What you need is a clear example. → subject clause in the textbook analysis",
+          "This is what I need. → predicative clause in the textbook analysis",
+          "Do you know where the room is? → not “where is the room” inside the embedded clause"
+        ]
+      },
+      {
+        "title": "That and what: useful contrasts",
+        "body": "Relative that refers to an antecedent and fills a position inside its clause. Conjunction that introduces a content clause without such a role. In “what I need”, what includes the meaning “the thing(s) that”; do not put an ordinary noun antecedent directly before this what.",
+        "examples": [
+          "The answer that you chose is correct. → relative that is object of chose",
+          "I think that the answer is correct. → conjunction",
+          "This is what I need. / This is the thing that I need.",
+          "The book that I need, not “the book what I need”"
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "question": "Choose the subject question.",
+        "options": [
+          "Who did you invite?",
+          "Who invited you?",
+          "Whom did you invite?"
+        ],
+        "answer": 1,
+        "explanation": "Who is the subject of invited. The other two ask about its object."
+      },
+      {
+        "question": "Choose the correct embedded question.",
+        "options": [
+          "I wonder who did she invite.",
+          "I wonder who she invited.",
+          "I wonder who she did invited."
+        ],
+        "answer": 1,
+        "explanation": "Embedded questions normally use statement word order: she invited."
+      },
+      {
+        "question": "Which relative pronoun may be omitted?",
+        "options": [
+          "The researcher who called is here.",
+          "The article that we discussed is online.",
+          "Our tutor, who called yesterday, is here."
+        ],
+        "answer": 1,
+        "explanation": "That is the object in a defining relative clause. Subject relatives and non-defining relatives do not allow this omission."
+      },
+      {
+        "question": "Complete: “Our tutor, ___ is presenting today, has arrived.”",
+        "options": [
+          "that",
+          "who",
+          "what"
+        ],
+        "answer": 1,
+        "explanation": "A non-defining relative referring to a person uses who here, not that."
+      },
+      {
+        "question": "In “I think that the answer is correct”, that is …",
+        "options": [
+          "a relative pronoun functioning as object",
+          "a conjunction introducing a content clause",
+          "an interrogative pronoun"
+        ],
+        "answer": 1,
+        "explanation": "The clause is complete without a missing subject or object filled by that."
+      },
+      {
+        "question": "Choose the correct fronted-preposition pattern.",
+        "options": [
+          "The person to that I spoke",
+          "The person to whom I spoke",
+          "The person to who I spoke"
+        ],
+        "answer": 1,
+        "explanation": "Whom is the formal objective form after the fronted preposition to."
+      },
+      {
+        "question": "In “I know who selected the topic”, who is …",
+        "options": [
+          "the subject inside the subordinate clause",
+          "the object of selected",
+          "a possessive attribute"
+        ],
+        "answer": 0,
+        "explanation": "Who performs the selecting. The whole subordinate clause is the object of know in the textbook analysis."
+      },
+      {
+        "question": "Choose the standard sentence.",
+        "options": [
+          "This is the book what I need.",
+          "This is what I need.",
+          "This is that what I need."
+        ],
+        "answer": 1,
+        "explanation": "What here includes “the thing that”. With an expressed antecedent use “the book that I need”."
+      }
+    ],
+    "production": {
+      "title": "Student-support FAQ",
+      "instructions": "Create a short FAQ explaining a university service. Include direct and embedded questions and relative clauses identifying people or resources. Annotate three examples: classify the pronoun and identify its function within its clause. Scenario: the writing centre opens Monday–Friday, 10:00–16:00. Appointments last 30 minutes and can be booked by email. Dr Lee coordinates the centre; student mentors give feedback on drafts. Students must bring a draft and a specific question. Your partner uses your FAQ to plan a visit.",
+      "criteria": [
+        "Questions and embedded questions use appropriate word order.",
+        "Relative clauses identify or add information clearly.",
+        "Clause function and pronoun function are distinguished."
+      ]
+    },
+    "homework": [
+      "Core homework: 35–45 minutes including preparation for Session 4.",
+      "Prepare glossary entries 11–13.",
+      "Analyse the first three Discover examples: identify each who, its function and any clause it introduces.",
+      "Embed these questions after I wonder: Which topic did they choose? Who called? Whose notes are these?",
+      "Write a 70–90-word service guide with one defining and one non-defining relative clause.",
+      "Prepare for Session 4: write spoken forms for 21st, 3/4, 0.305 and 25%; try reading the discovery calculations."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Numbers & mathematical meaning",
+    "subtitle": "Read quantities, explain operations, interpret data",
+    "outcomes": [
+      "Define cardinal and ordinal numerals and the required fraction terms.",
+      "Read numerical expressions and explain basic calculations.",
+      "Use quantity agreement and measurement expressions accurately."
+    ],
+    "discovery": {
+      "examples": [
+        "Three hundred students / hundreds of students",
+        "Three quarters of the water is clean.",
+        "Three quarters of the students are present.",
+        "Subtract five from twelve.",
+        "Divide twenty by five.",
+        "0.305 → zero point three zero five"
+      ],
+      "questions": [
+        "Why does hundred have no -s after three?",
+        "What determines agreement in the fraction examples?",
+        "Which number do you start with in subtraction?",
+        "How do we read digits after the decimal point?"
+      ],
+      "insight": "Numerical accuracy depends on grammar as well as arithmetic: formation, agreement, word order and prepositions all contribute to meaning."
+    },
+    "theory": [
+      {
+        "title": "Numerals: definition, structure and function",
+        "body": "Kaushanskaya defines the numeral as a part of speech indicating number or the order of people and things in a series. Cardinals indicate exact number; ordinals indicate position. The textbook distinguishes simple, derived and composite forms. Numerals can function as subject, predicative, object, attribute and, in suitable contexts, adverbial modifier.",
+        "examples": [
+          "Three arrived first. → subject",
+          "We selected three. → object",
+          "Their number was three. → predicative",
+          "The third chapter / Chapter Three",
+          "They walked three abreast. → adverbial expression"
+        ]
+      },
+      {
+        "title": "Formation and number conventions",
+        "body": "Use hyphens in compound numbers from twenty-one to ninety-nine. Notice forty, fifth, ninth and twelfth. Exact quantities use hundred/thousand/million without plural -s after a number; approximate plural forms take of. British usage commonly includes and after hundreds; American usage often omits it. Dates can be read with ordinals even when written with cardinal digits.",
+        "examples": [
+          "twenty-one; twenty-first; forty; fifth; ninth; twelfth",
+          "three hundred / hundreds of students",
+          "one hundred and five (BrE) / one hundred five (common AmE)",
+          "3 May → the third of May; May third",
+          "0 can be zero; nought is also used in BrE decimals."
+        ]
+      },
+      {
+        "title": "Fractions and decimals",
+        "body": "A common fraction expresses a numerator divided by a non-zero denominator. The numerator is the upper number; the denominator is the lower number. In a part–whole interpretation the denominator states the number of equal parts in a whole. A decimal fraction has a denominator that is a power of ten and can be expressed in decimal notation. Read decimal digits individually after point.",
+        "examples": [
+          "1/2 → a half; 2/3 → two thirds; 3/4 → three quarters",
+          "1 1/2 → one and a half",
+          "3/7 → three sevenths / three over seven",
+          "0.305 → zero point three zero five",
+          "In 3/4, 3 is the numerator and 4 is the denominator."
+        ]
+      },
+      {
+        "title": "Quantity, percentage and measurement grammar",
+        "body": "With fractions and percentages of a noun phrase, agreement normally follows what is being quantified. An amount treated as one measurement can take singular agreement. Fractions over one normally precede plural measurement nouns. Before a noun, a number–unit modifier normally uses a singular unit and a hyphen.",
+        "examples": [
+          "Half of the water is ready. Half of the students are ready.",
+          "Twenty per cent of the participants are absent.",
+          "Three kilometres is a long walk in this heat.",
+          "one and a half hours / a two-hour session",
+          "A rise from 20% to 25% is five percentage points, or a 25% relative increase."
+        ]
+      },
+      {
+        "title": "Operations and their grammar",
+        "body": "Order matters: add A to B; subtract A from B; multiply A by B; divide A by B. Useful result words are sum/total, difference, product, quotient and remainder. Equals is a verb; is equal to is an alternative construction. Multiplying by two differs from increasing by two.",
+        "examples": [
+          "Seven plus five equals twelve. → sum",
+          "Twelve minus five equals seven. → difference",
+          "Six times four equals twenty-four. → product",
+          "Twenty divided by five equals four. → quotient",
+          "Divide seventeen by five: the quotient is three with a remainder of two."
+        ]
+      },
+      {
+        "title": "Powers, roots, ratios and comparisons",
+        "body": "Learn common ways to read powers and roots. Ratios compare quantities; percentages express a quantity per hundred. Negative numbers use minus or negative, depending on context. Comparison language must preserve the direction of the relationship.",
+        "examples": [
+          "three squared; two cubed; five to the power of four",
+          "The square root of sixteen is four.",
+          "2:3 → two to three; 25% → twenty-five per cent",
+          "−4 → minus four / negative four",
+          "Five is greater than three. Three is less than five.",
+          "Approximately equal to; round to two decimal places."
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "question": "Choose the correct exact quantity.",
+        "options": [
+          "three hundreds students",
+          "three hundred students",
+          "three hundreds of students"
+        ],
+        "answer": 1,
+        "explanation": "Hundred has no plural -s after an exact number; approximate “hundreds” takes of."
+      },
+      {
+        "question": "How do we read 0.305?",
+        "options": [
+          "zero point three hundred and five",
+          "zero point three zero five",
+          "zero comma thirty-five"
+        ],
+        "answer": 1,
+        "explanation": "Read the digits individually after the decimal point, including the zero."
+      },
+      {
+        "question": "In 3/8, the denominator is …",
+        "options": [
+          "3",
+          "8",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "The denominator is the lower number; it must not be zero."
+      },
+      {
+        "question": "Subtract seven from nineteen. The result is …",
+        "options": [
+          "−12",
+          "12",
+          "26"
+        ],
+        "answer": 1,
+        "explanation": "Start with nineteen and take away seven: nineteen minus seven equals twelve."
+      },
+      {
+        "question": "Complete: “Three quarters of the participants ___ arrived.”",
+        "options": [
+          "has",
+          "have",
+          "is"
+        ],
+        "answer": 1,
+        "explanation": "The quantified noun participants is plural, so have is appropriate."
+      },
+      {
+        "question": "Choose the correct measurement expression.",
+        "options": [
+          "a two-hours session",
+          "a two-hour session",
+          "a two hour’s session"
+        ],
+        "answer": 1,
+        "explanation": "A number–unit modifier before a noun uses the singular unit and a hyphen."
+      },
+      {
+        "question": "A rise from 20% to 25% is …",
+        "options": [
+          "five percentage points",
+          "a five per cent relative increase",
+          "twenty-five percentage points"
+        ],
+        "answer": 0,
+        "explanation": "The difference is five percentage points. Relative to 20, the increase is 5/20 = 25%."
+      },
+      {
+        "question": "Which instruction produces 6 from 18?",
+        "options": [
+          "Divide eighteen by three.",
+          "Divide three by eighteen.",
+          "Subtract eighteen from three."
+        ],
+        "answer": 0,
+        "explanation": "Eighteen divided by three equals six; the order after divide and by matters."
+      }
+    ],
+    "production": {
+      "title": "Make the numbers clear",
+      "instructions": "Explain a small survey or budget to a partner. Include a fraction, decimal, percentage, comparison and two operations. Your partner reconstructs the figures without seeing your source. Resolve any differences and explain one agreement choice. Data: in a survey of 40 students, 20 prefer morning classes, 12 prefer afternoon classes and 8 have no preference. A workshop budget is £120: printing costs £24 and materials cost £36; the remainder is shared equally across 3 activities. Calculate shares, percentages and the remaining amount. Your partner checks the calculations.",
+      "criteria": [
+        "The calculations and spoken numerical forms are accurate.",
+        "Operation order and prepositions are clear.",
+        "Quantity agreement matches the intended meaning."
+      ]
+    },
+    "homework": [
+      "Prepare glossary entries 14–20 and review the complete glossary.",
+      "Complete the open-book final assessment: approximately 60–70 minutes. It replaces ordinary written homework after Session 4.",
+      "Use your own examples and explanations. Download your responses to keep or submit them through your usual class channel.",
+      "Prepare one oral explanation: define a term, analyse an example and explain a numerical operation."
+    ]
+  }
+];
+</script>
+<script>window.GLOSSARY = [
+['A pronoun','A part of speech which points out objects and their qualities without naming them.','Kaushanskaya, Chapter IV §1.'],
+['Personal pronouns','Pronouns referring to the speaker, addressee, or people and things spoken about.','I/me, you, he/him, she/her, it, we/us, they/them; distinguish person, number and case.'],
+['Possessive pronouns','Forms expressing possession or association, with conjoint and absolute forms.','my/mine, your/yours, her/hers, our/ours, their/theirs; his has the same form. Modern accounts often call my a determiner.'],
+['Reflexive pronouns','Forms referring back to the subject when the action returns to or is associated with the doer.','She introduced herself. The same forms have emphatic uses: She herself introduced the speaker.'],
+['Reciprocal pronouns','Each other and one another express mutual action or relationship.','They checked each other’s answers. Modern usage does not enforce a two-versus-more-than-two distinction.'],
+['Demonstrative pronouns','Forms pointing out people, things or ideas.','This, that, these, those; Kaushanskaya also includes such and (the) same.'],
+['Indefinite pronouns','Pronouns pointing out a person or thing indefinitely.','Some, any and their compounds; one. Interpretation depends on context.'],
+['Negative pronouns','Forms expressing absence or exclusion of people or things.','No, none, nobody, no one, nothing, neither.'],
+['Detaching pronouns','In classifications using this label, forms identifying something different, separate or additional.','Typically other and another. This is an additional teaching label: Kaushanskaya groups them under defining pronouns.'],
+['Universal pronouns','In classifications using this label, forms referring to a whole set or distributing reference over its members.','All, both, each, every and every-compounds; membership varies by classification. Kaushanskaya includes these under defining pronouns.'],
+['Interrogative pronouns','Pronouns used in inquiry to form special questions.','Who, whose, what, which; whom is an objective form of who.'],
+['Conjunctive pronouns','Pronouns introducing subject, object or predicative subordinate clauses and functioning within those clauses.','Kaushanskaya’s analysis: I know who called. Who is subject of called; the clause is object of know.'],
+['Relative pronouns','Pronouns connecting a relative clause to its antecedent and functioning within that clause; some refer to a preceding clause.','The student who called. Who is subject within the relative clause.'],
+['A numeral','A part of speech indicating number or the order of people and things in a series.','Kaushanskaya, Chapter V §1.'],
+['Cardinal numerals','Numerals indicating exact number and used in counting.','One, twelve, forty, a hundred, twenty-three.'],
+['Ordinal numerals','Numerals indicating position or order in a series.','First, second, third, fifth, ninth, twelfth, twenty-first.'],
+['Fractional numbers','Numbers expressible as a numerator divided by a non-zero denominator.','Three quarters: 3/4. Mathematical definition supplied for this course.'],
+['A decimal fraction','A fraction with a power of ten as denominator, expressible in decimal notation.','375/1000 = 0.375: zero point three seven five.'],
+['A numerator','The upper number in a common fraction.','In 3/4, the numerator is 3. In a part–whole model it counts the parts taken.'],
+['A denominator','The lower, non-zero number in a common fraction.','In 3/4, the denominator is 4. In a part–whole model it indicates the equal parts making a whole.']
+].map(([term,definition,note])=>({term,definition,note}));
+window.ASSESSMENT = [
+{title:'A · Terminology — 8 marks',instructions:'For each of four terms: define it (1 mark), then give an accurate example (1 mark).',items:['A possessive pronoun','A conjunctive pronoun','An ordinal numeral','A denominator']},
+{title:'B · Forms and reference — 8 marks',instructions:'Each item: correct form or revision (1 mark) and a brief explanation (1 mark).',items:['The tutor sent the instructions to Alex and ___. Choose I or me and explain.','These are our notes; those are ___. Choose their or theirs and explain.','Correct if necessary: The institute updated it’s website. Explain.','Rewrite to remove ambiguity: When Sara met Lina, she showed her the timetable. State your intended meaning.']},
+{title:'C · Reflexive, emphatic and reciprocal — 9 marks',instructions:'Each set: identify the use (1), explain the meaning (1), and supply the requested contrast or correction (1).',items:['The students assessed themselves. Identify the use, explain who assessed whom, then rewrite for mutual assessment.','Nina herself introduced the speaker. Identify the use, explain the emphasis, then contrast it with Nina introduced herself.','Please send the form to myself. Give a neutral correction, explain it, and write a separate correct example with by myself.']},
+{title:'D · Quantity and alternatives — 6 marks',instructions:'Complete each context (1 mark). For the last two items, also explain your choice (1 mark each).',items:['There are two rooms. One is occupied; ___ is free.','Would you like ___ tea? Use some or any for a neutral offer.','We tried two solutions. ___ worked, so we need a new approach.','___ student has received their own copy. Choose each or every and explain the focus; both can be possible.']},
+{title:'E · Questions and clause connections — 8 marks',instructions:'Two marks per item, as specified.',items:['Who selected the topic? / I wonder who selected the topic. Classify each who (1 mark each).','The student who selected the topic will present. Identify the antecedent and the function of who (1 mark each).','Correct: I wonder which topic did they select. Give the corrected sentence (1) and explain word order (1).','Compare: I think that the answer is correct. / The answer that you selected is correct. Identify that in each (1 mark each).']},
+{title:'F · Numbers and operations — 11 marks',instructions:'Items 1–5: 1 mark each. Items 6–8: 2 marks each for the correct answer and explanation.',items:['Write 0.305 in words.','Write 3/4 and 2½ in words; both are needed for the mark.','Write 21st in words.','Give an instruction for 19 − 7 using subtract.','Give an instruction for 18 ÷ 3 using divide.','Complete: Three quarters of the participants ___ submitted their answers. Explain agreement.','Express the same duration: The session lasts two hours. / It is ___. Explain the noun form.','A rate rises from 20% to 25%. Give the increase in percentage points and the relative percentage increase; show your calculation.']},
+{title:'G · Data commentary — 10 marks',instructions:'Write 100–120 words. Task fulfilment 2; numerical accuracy 3; grammar 3; explanations 2. Underline or label four pronouns and explain two choices.',items:['Survey of 40 students: 20 prefer morning classes, 12 prefer afternoon classes, and 8 have no preference. Write a commentary using a fraction, a percentage, a comparison and clear pronoun reference. Do not infer information not given.']}
+];
+</script>
+<script>(function () {
+  'use strict';
+  const course = Array.isArray(window.COURSE) ? window.COURSE : [];
+  const glossary = Array.isArray(window.GLOSSARY) ? window.GLOSSARY : [];
+  const assessment = Array.isArray(window.ASSESSMENT) ? window.ASSESSMENT : [];
+  const app = document.getElementById('app');
+  const storageKey = 'grammar-studio-v1';
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}') || {}; } catch (_) {}
+  const state = { sessions: saved.sessions || {}, drafts: saved.drafts || {}, board: !!saved.board };
+  let view = 'home', active = 0, stage = 'Discover', practiceIndex = 0;
+  let selected = null, checked = false;
+  const stages = ['Discover', 'Rule', 'Practise', 'Use', 'Review', 'Homework'];
+  const esc = value => String(value == null ? '' : value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const list = (items, cls) => '<ul' + (cls ? ' class="' + cls + '"' : '') + '>' + (items || []).map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
+  function persist() { try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (_) {} }
+  function sessionState() { const id = String(course[active].id); return state.sessions[id] || (state.sessions[id] = { started: true, answers: {}, reflection: {} }); }
+  function status(s) { const progress = state.sessions[String(s.id)]; return progress && progress.reviewed ? 'Reviewed' : progress && progress.started ? 'In progress' : 'Not started'; }
+  function focusMain() { const el = app.querySelector('h1'); if (el) { el.tabIndex = -1; el.focus({preventScroll:true}); } window.scrollTo({top:0,behavior:'instant'}); }
+  function updateNavigation() {
+    const nav = document.getElementById('sessionNav');
+    if (nav) nav.innerHTML = course.map((s,i) => '<button class="session-link' + (view === 'lesson' && active === i ? ' active' : '') + '" data-session="'+i+'"'+(view==='lesson'&&active===i?' aria-current="page"':'')+'><span class="card-number">0'+(i+1)+'</span><span>'+esc(s.title)+'<small class="muted" style="display:block">'+status(s)+'</small></span></button>').join('');
+    document.querySelectorAll('[data-view]').forEach(b => { if (b.dataset.view === view) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+    const complete = course.filter(s=>status(s)==='Reviewed').length;
+    const el = document.getElementById('courseProgress');
+    if (el) el.innerHTML = '<span>'+complete+' / '+course.length+' sessions reviewed</span><div class="progress-track" role="progressbar" aria-label="Sessions reviewed" aria-valuemin="0" aria-valuemax="'+course.length+'" aria-valuenow="'+complete+'"><span class="progress-fill" style="width:'+(course.length?complete/course.length*100:0)+'%"></span></div>';
+  }
+  function renderHome() {
+    app.innerHTML = '<section class="hero hero-grid"><div><p class="eyebrow">THE UNIVERSITY GRAMMAR LAB</p><h1>Small words.<br>Precise meanings.</h1><p class="hero-description">Explore pronouns and numerals through discovery, thoughtful practice and real communication.</p><div class="toolbar"><button class="button" data-session="0">Start the course <span aria-hidden="true">↗</span></button><button class="button-secondary" data-view="glossary">Explore the glossary</button></div><p class="muted">4 sessions · 90 minutes each · B1+/B2 consolidation</p></div><div class="hero-art" aria-hidden="true"><span class="art-word">we</span><span class="art-number">¾</span><span class="art-caption">REFERENCE / QUANTITY / MEANING</span></div></section><section aria-labelledby="course-title"><div class="toolbar" style="justify-content:space-between"><div><p class="eyebrow">YOUR LEARNING PATH</p><h2 id="course-title">Four sessions. One connected course.</h2></div><span class="tag">Choose your starting point</span></div><div class="session-grid">'+course.map((s,i)=>'<article class="session-card"><span class="card-number">0'+(i+1)+'</span><span class="tag">'+status(s)+'</span><h3>'+esc(s.title)+'</h3><p>'+esc(s.subtitle)+'</p><button class="button-secondary" data-session="'+i+'">'+(status(s)==='Not started'?'Explore session':'Continue session')+' <span aria-hidden="true">→</span></button></article>').join('')+'</div></section><section class="theory-card" style="margin-top:2rem"><p class="eyebrow">HOW THIS COURSE WORKS</p><h2>Notice. Explain. Put it to use.</h2><p>Begin with examples, work out a pattern, check the explanation and test your choices. Finish with a meaningful task and a personal review.</p><p class="muted">All sessions are open. Progress and assessment drafts stay in this browser. “Reviewed” records your participation, not a mastery score.</p><div class="toolbar"><button class="button-secondary" data-action="print">Print this view</button><button class="button-secondary" data-action="reset">Reset local progress</button></div></section>';
+  }
+  function diagnosticHTML(s) {
+    return '<details class="theory-card"><summary>Check what you know · 3 quick questions</summary><p>This is a starting-point check, not a scored test. Choose an answer or “Not sure”, then compare your reasoning with the guidance.</p>'+(s.practice||[]).slice(0,3).map((q,i)=>'<article class="question-card"><h3>'+esc(q.question)+'</h3><fieldset style="border:0;padding:0"><legend class="muted">Choose your starting answer</legend>'+q.options.map((option,j)=>'<label class="option"><input type="radio" name="diagnostic-'+i+'" value="'+j+'"> <span>'+esc(option)+'</span></label>').join('')+'<label class="option"><input type="radio" name="diagnostic-'+i+'" value="unsure"> <span>Not sure yet</span></label></fieldset><details><summary>Reveal guidance</summary><p><strong>'+esc(q.options[q.answer])+'</strong></p><p>'+esc(q.explanation)+'</p></details></article>').join('')+'<p>If the choices were uncertain, start with the core explanation. If you can explain all three, try the communication challenge and return to any rule you need.</p><div class="toolbar"><button class="button-secondary" data-stage="Rule">Review the forms</button><button class="button-secondary" data-stage="Use">Try the challenge</button></div></details>';
+  }
+  function renderLesson() {
+    const s = course[active]; if (!s) { renderHome(); return; }
+    const progress = sessionState();
+    let html = '<header class="lesson-header"><p class="eyebrow">SESSION 0'+(active+1)+' / 90 MINUTES</p><h1>'+esc(s.title)+'</h1><p>'+esc(s.subtitle)+'</p></header><nav class="stage-nav" aria-label="Lesson stages">'+stages.map(x=>'<button class="stage-button'+(stage===x?' active':'')+'" data-stage="'+x+'"'+(stage===x?' aria-current="step"':'')+'>'+x+'</button>').join('')+'</nav><section class="stage-content">';
+    if (stage === 'Discover') html += diagnosticHTML(s)+'<p class="eyebrow">LOOK CLOSELY</p><h2>What do you notice?</h2><p>Think individually, compare with a partner, then explain your reasoning.</p><div class="discovery-list">'+(s.discovery.examples||[]).map(x=>'<p class="example">'+esc(x)+'</p>').join('')+'</div>'+list(s.discovery.questions)+'<details class="theory-card"><summary>Reveal the pattern</summary><p>'+esc(s.discovery.insight)+'</p></details><h3>By the end, you can…</h3>'+list(s.outcomes)+'<button class="button" data-stage="Rule">Check the explanation →</button>';
+    if (stage === 'Rule') html += '<p class="eyebrow">CORE EXPLANATIONS</p><h2>Give the pattern a name.</h2>'+(s.theory||[]).map((t,i)=>'<article class="theory-card"><span class="card-number">'+String(i+1).padStart(2,'0')+'</span><h3>'+esc(t.title)+'</h3><p>'+esc(t.body)+'</p>'+(t.examples||[]).map(x=>'<p class="example">'+esc(x)+'</p>').join('')+'</article>').join('')+'<button class="button" data-stage="Practise">Try it in context →</button>';
+    if (stage === 'Practise') html += practiceHTML(s);
+    if (stage === 'Use') html += '<p class="eyebrow">MAKE MEANING TOGETHER</p><h2>'+esc(s.production.title)+'</h2><article class="theory-card"><p>'+esc(s.production.instructions)+'</p><h3>Plan → exchange → verify</h3><p>Take a minute to plan. Work with a partner. Your listener should be able to use or reconstruct the information you give.</p><h3>Success criteria</h3>'+list(s.production.criteria)+'</article><details class="theory-card"><summary>Reflection challenge</summary><p>Choose one sentence from your task. Explain the form, meaning and function of a key word. How would another choice change the message?</p></details><button class="button" data-stage="Review">Reflect on your work →</button>';
+    if (stage === 'Review') {
+      const answered = Object.values(progress.answers||{}).filter(Boolean).length;
+      html += '<p class="eyebrow">PAUSE AND REFLECT</p><h2>What can you explain now?</h2><p>'+answered+' of '+s.practice.length+' practice questions answered correctly. You can revisit any question without a penalty.</p><div class="checklist">'+['I can choose an appropriate form.','I can explain the meaning and a useful contrast.','I can identify the grammatical function.'].map((x,i)=>'<label><input type="checkbox" data-reflection="'+i+'" '+(progress.reflection&&progress.reflection[i]?'checked':'')+'> '+esc(x)+'</label>').join('')+'</div><label for="uncertainty">One point I want to revisit</label><textarea id="uncertainty" rows="3" data-uncertainty placeholder="Name a contrast or write an example…">'+esc(progress.uncertainty||'')+'</textarea><div class="toolbar"><button class="button" data-action="reviewed">'+(progress.reviewed?'Session reviewed ✓':'Mark session reviewed')+'</button><button class="button-secondary" data-stage="Practise">I need more practice</button></div><p class="muted">A review mark records participation and reflection. It is not a certificate of mastery.</p>';
+    }
+    if (stage === 'Homework') html += '<p class="eyebrow">RETRIEVE AND TRANSFER</p><h2>Take the learning further.</h2>'+list(s.homework,'homework-list')+'<article class="theory-card"><h3>Prepare an oral explanation</h3><p>Define the term → give an example → identify its form and function → explain a contrast.</p></article><div class="toolbar"><button class="button-secondary" data-view="glossary">Open the glossary</button>'+(active===course.length-1?'<button class="button" data-view="assessment">Open final assessment →</button>':'<button class="button" data-session="'+(active+1)+'">Next session →</button>')+'</div>';
+    app.innerHTML = html+'</section>';
+  }
+  function practiceHTML(s) {
+    const q = s.practice[practiceIndex]; if (!q) return '<p>No practice questions available.</p>';
+    return '<p class="eyebrow">PRACTISE WITH FEEDBACK</p><div class="toolbar" style="justify-content:space-between"><h2>Explain your choice.</h2><span class="tag">'+(practiceIndex+1)+' / '+s.practice.length+'</span></div><article class="question-card"><h3>'+esc(q.question)+'</h3><fieldset style="border:0;padding:0;margin:0"><legend class="muted">Choose one answer. Discuss your reason before checking.</legend>'+(q.options||[]).map((option,i)=>'<label class="option'+(checked&&i===q.answer?' correct':checked&&i===selected?' incorrect':'')+'"><input type="radio" name="answer" value="'+i+'" '+(selected===i?'checked':'')+' '+(checked?'disabled':'')+'> <span>'+esc(option)+'</span></label>').join('')+'</fieldset>'+(checked?'<div class="feedback" role="status"><strong>'+(selected===q.answer?'That fits.':'Let’s look at the meaning.')+'</strong><p>'+esc(q.explanation)+'</p></div>':'')+'<div class="toolbar">'+(!checked?'<button class="button" data-action="check" '+(selected===null?'disabled':'')+'>Check answer</button>':'<button class="button-secondary" data-action="retry">Try again</button>')+'<button class="button-secondary" data-action="previous-question" '+(practiceIndex===0?'disabled':'')+'>Previous</button><button class="button-secondary" data-action="next-question">'+(practiceIndex===s.practice.length-1?'Review session →':'Next question →')+'</button></div></article><p class="muted">No timer. No lost points. The explanation matters more than the first attempt.</p>';
+  }
+  function renderGlossary(query) {
+    const q = (query||'').toLowerCase();
+    const terms = glossary.filter(x=>(x.term+' '+x.definition+' '+(x.note||'')).toLowerCase().includes(q));
+    app.innerHTML = '<header class="lesson-header"><p class="eyebrow">EXAM LANGUAGE / 20 TERMS</p><h1>The grammar glossary.</h1><p>Learn a definition, illustrate it and explain a contrast.</p></header><div class="theory-card"><p>Kaushanskaya’s classification is the examination reference. Universal and detaching are additional teaching labels mapped to the defining-pronoun group, not separate groups in the uploaded edition.</p></div><div class="toolbar"><label for="glossarySearch">Find a term</label><input id="glossarySearch" class="search-input" type="search" placeholder="Search terms and definitions…" value="'+esc(query||'')+'"></div><p class="muted">'+terms.length+' terms</p><div class="glossary-grid">'+terms.map(x=>'<article class="glossary-card"><h2>'+esc(x.term)+'</h2><p>'+esc(x.definition)+'</p>'+(x.note?'<p class="muted">'+esc(x.note)+'</p>':'')+'</article>').join('')+'</div>';
+  }
+  function renderAssessment() {
+    app.innerHTML = '<header class="lesson-header"><p class="eyebrow">FINAL TAKE-HOME ASSESSMENT</p><h1>Put your knowledge to work.</h1><p>Open-book · approximately 60–70 minutes · 60 marks</p></header><article class="theory-card"><h2>Before you begin</h2><p>Use the course materials. Give your own explanations and examples. This task replaces the regular homework after Session 4. Drafts save in this browser; download your responses to keep or submit them.</p><div class="toolbar"><button class="button" data-action="download-assessment">Download my responses</button><button class="button-secondary" data-action="print">Print assessment</button></div><p class="muted" id="draftStatus" role="status">Drafts are stored on this device when browser storage is available.</p></article>'+assessment.map((s,i)=>'<section class="assessment-section theory-card"><h2>'+esc(s.title)+'</h2><p>'+esc(s.instructions)+'</p><ol>'+(s.items||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol><label for="draft-'+i+'">Your response</label><textarea id="draft-'+i+'" data-draft="'+i+'" rows="6" placeholder="Write your answers and explanations…">'+esc(state.drafts[i]||'')+'</textarea></section>').join('');
+  }
+  function render(focus) {
+    if(view==='lesson')renderLesson(); else if(view==='glossary')renderGlossary(''); else if(view==='assessment')renderAssessment(); else renderHome();
+    updateNavigation(); if(focus)focusMain();
+  }
+  function openSession(i) { if(!course[i])return; active=i;view='lesson';stage='Discover';practiceIndex=0;selected=null;checked=false;sessionState().started=true;persist();render(true); }
+  document.addEventListener('click', e=>{
+    const button=e.target.closest('button,[data-view]'); if(!button)return;
+    if(button.dataset.session!==undefined){openSession(Number(button.dataset.session));return;}
+    if(button.dataset.view){view=button.dataset.view;render(true);return;}
+    if(button.dataset.stage){stage=button.dataset.stage;selected=null;checked=false;render(true);return;}
+    const action=button.dataset.action;
+    if(action==='check'&&selected!==null){checked=true;sessionState().answers[practiceIndex]=selected===course[active].practice[practiceIndex].answer;persist();render();}
+    if(action==='retry'){selected=null;checked=false;render();}
+    if(action==='previous-question'){practiceIndex=Math.max(0,practiceIndex-1);selected=null;checked=false;render();}
+    if(action==='next-question'){if(practiceIndex===course[active].practice.length-1)stage='Review';else practiceIndex++;selected=null;checked=false;render();}
+    if(action==='reviewed'){sessionState().reviewed=true;persist();render();}
+    if(action==='print')window.print();
+    if(action==='reset'&&window.confirm('Clear progress and assessment drafts saved in this browser?')){state.sessions={};state.drafts={};persist();render();}
+    if(action==='download-assessment'){
+      const text='PRONOUNS AND NUMERALS — FINAL ASSESSMENT\n\n'+assessment.map((s,i)=>s.title+'\n'+s.instructions+'\n'+s.items.map((x,j)=>(j+1)+'. '+x).join('\n')+'\n\nRESPONSE\n'+(state.drafts[i]||'[No response yet]')).join('\n\n----------------\n\n');
+      const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download='grammar-studio-responses.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    }
+  });
+  document.addEventListener('change',e=>{
+    if(e.target.name==='answer'){selected=Number(e.target.value);const check=app.querySelector('[data-action="check"]');if(check)check.disabled=false;}
+    if(e.target.dataset.reflection!==undefined){sessionState().reflection[e.target.dataset.reflection]=e.target.checked;persist();}
+  });
+  document.addEventListener('input',e=>{
+    if(e.target.id==='glossarySearch'){const query=e.target.value,pos=e.target.selectionStart;renderGlossary(query);const input=document.getElementById('glossarySearch');input.focus();if(pos!==null)input.setSelectionRange(pos,pos);}
+    if(e.target.dataset.draft!==undefined){state.drafts[e.target.dataset.draft]=e.target.value;persist();const el=document.getElementById('draftStatus');if(el)el.textContent='Draft updated. Download your responses to keep a separate copy.';}
+    if(e.target.hasAttribute('data-uncertainty')){sessionState().uncertainty=e.target.value;persist();}
+  });
+  function updateBoard(){document.body.classList.toggle('board-mode',state.board);const button=document.getElementById('boardToggle');if(button){button.setAttribute('aria-pressed',String(state.board));button.textContent=state.board?'Exit board mode':'Board mode';}}
+  const board=document.getElementById('boardToggle');if(board)board.addEventListener('click',()=>{state.board=!state.board;persist();updateBoard();});
+  const print=document.getElementById('printButton');if(print)print.addEventListener('click',()=>window.print());
+  updateBoard();render();
+})();
+</script>
+<script>document.getElementById("downloadOffline").addEventListener("click",function(e){e.preventDefault();const blob=new Blob(["<!doctype html>\n"+document.documentElement.outerHTML],{type:"text/html;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="grammar-studio-offline.html";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);});</script></body>
 </html>
