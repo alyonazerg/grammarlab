@@ -1,0 +1,39 @@
+name: Publish Grammar Studio
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: grammar-pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Clear stale Pages deployment and select Actions publishing
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const repo = context.repo;
+            try {
+              await github.request('POST /repos/{owner}/{repo}/pages/deployments/{deployment_id}/cancel', {...repo, deployment_id: '00d8e9ef04a54e155ae9a18bde397c59bf8dea04'});
+            } catch (error) {
+              if (![400, 404, 409].includes(error.status)) throw error;
+              core.info('Previous deployment is already terminal or absent.');
+            }
+            await github.request('PUT /repos/{owner}/{repo}/pages', {...repo, build_type: 'workflow'});
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
